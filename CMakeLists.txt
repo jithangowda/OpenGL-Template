@@ -72,7 +72,7 @@ if(MSVC) # If using the VS compiler...
 
 endif()
 
-# If using GCC, no need for MSVC-specific settings
+# If using GCC
 if(CMAKE_COMPILER_IS_GNUCXX)
     # Add any additional GCC flags if needed
     target_compile_options("${CMAKE_PROJECT_NAME}" PRIVATE -std=c++17)  # Ensure C++17 is used
